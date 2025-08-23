@@ -120,24 +120,29 @@ export const GalleryPage: React.FC = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        
+        <div className="mb-12">
           <div className="flex items-center space-x-2 text-gray-700 mb-4">
             <Filter className="h-5 w-5" />
             <span className="font-medium">Filter by:</span>
           </div>
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-3 rounded-full transition-all duration-300 ${selectedCategory === category.id
-                  ? 'bg-blue-900 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-            >
-              {category.name}
-            </button>
-          ))}
+
+          <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`whitespace-nowrap px-4 py-2 rounded-full transition-all duration-300 ${selectedCategory === category.id
+                    ? 'bg-blue-900 text-white shadow-md'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+              >
+                {category.name}
+              </button>
+            ))}
+          </div>
         </div>
+
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">

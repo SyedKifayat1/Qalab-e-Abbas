@@ -69,12 +69,12 @@ export const HomePage: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">About Qalab-e-Abbas</h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Mr. Qalab-e-Abbas holds a MSc. International Business from University of Dundee, Scotland, UK. 
-                His teaching and research focuses on the interface between international entrepreneurship, 
+                Mr. Qalab-e-Abbas holds a MSc. International Business from University of Dundee, Scotland, UK.
+                His teaching and research focuses on the interface between international entrepreneurship,
                 innovation and marketing management within the context of small and medium-size enterprises.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                He is a dedicated, ambitious and goal-driven educator with 11 years progressive experience 
+                He is a dedicated, ambitious and goal-driven educator with 11 years progressive experience
                 in higher education institutes.
               </p>
               <a
@@ -86,18 +86,20 @@ export const HomePage: React.FC = () => {
               </a>
             </div>
             <div className="relative">
+              
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+                  src="/g-3.jpeg"
                   alt="Teaching"
-                  className="rounded-lg shadow-md"
+                  className="w-full h-48 object-cover rounded-lg shadow-md"
                 />
                 <img
-                  src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg"
+                  src="/g-6.jpeg"
                   alt="Seminar"
-                  className="rounded-lg shadow-md mt-8"
+                  className="w-full h-48 object-cover rounded-lg shadow-md"
                 />
               </div>
+
             </div>
           </div>
         </div>

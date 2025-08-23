@@ -11,12 +11,12 @@ export const CTAButtons: React.FC<CTAButtonsProps> = ({ service, className = "" 
     const message = service 
       ? `Hello Mr. Qalab-e-Abbas, I'm interested in your ${service} service.`
       : "Hello Mr. Qalab-e-Abbas, I'm interested in your services.";
-    const whatsappUrl = `https://wa.me/923001234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/923214052625?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleLinkedInClick = () => {
-    window.open('https://linkedin.com/in/qalab-abbas', '_blank');
+    window.open('https://www.linkedin.com/in/qalab-e-abbas-06203b114/', '_blank');
   };
 
   return (

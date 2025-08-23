@@ -12,10 +12,10 @@ export const Footer: React.FC = () => {
               Incharge of Academics & Faculty Development • Educationist • Certified Teacher & Trainer • Certified Entrepreneurial Coach
             </p>
             <div className="flex space-x-4">
-              <a href="mailto:qalab@example.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:qalab-e-abbas@usa.edu.pk" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
-              <a href="https://linkedin.com/in/qalab-abbas" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/qalab-e-abbas-06203b114/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-400" />
-                <span className="text-gray-300">qalab@example.com</span>
+                <span className="text-gray-300">qalab-e-abbas@usa.edu.pk</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Linkedin className="h-5 w-5 text-amber-400" />

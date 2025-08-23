@@ -98,8 +98,8 @@ export const GalleryPage: React.FC = () => {
     }
   ];
 
-  const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
+  const filteredImages = selectedCategory === 'all'
+    ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory);
 
   const openLightbox = (image: any) => {
@@ -129,11 +129,10 @@ export const GalleryPage: React.FC = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-3 rounded-full transition-all duration-300 ${
-                selectedCategory === category.id
+              className={`px-6 py-3 rounded-full transition-all duration-300 ${selectedCategory === category.id
                   ? 'bg-blue-900 text-white shadow-lg'
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
+                }`}
             >
               {category.name}
             </button>
@@ -173,7 +172,7 @@ export const GalleryPage: React.FC = () => {
         <div className="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Invite Me for Your Next Event</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Looking for an experienced speaker, trainer, or coach for your organization? 
+            Looking for an experienced speaker, trainer, or coach for your organization?
             Let's discuss how I can contribute to your team's success and professional development.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -185,13 +184,21 @@ export const GalleryPage: React.FC = () => {
         {selectedImage && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <div className="relative max-w-4xl w-full bg-white rounded-lg overflow-hidden">
-              <button
+              {/* <button
                 onClick={closeLightbox}
                 className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
               >
                 <X className="h-6 w-6" />
+              </button> */}
+
+              <button
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 z-10 bg-white text-gray-900 shadow-lg hover:bg-gray-200 p-2 rounded-full transition-colors"
+              >
+                <X className="h-6 w-6" />
               </button>
-              
+
+
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative">
                   <img

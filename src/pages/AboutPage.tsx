@@ -15,7 +15,7 @@ export const AboutPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img
-              src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
+              src="/qalab-e-abbas.jpeg"
               alt="Qalab-e-Abbas"
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
             />

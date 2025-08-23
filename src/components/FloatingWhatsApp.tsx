@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 export const FloatingWhatsApp: React.FC = () => {
   const handleWhatsAppClick = () => {
     const message = "Hello Mr. Qalab-e-Abbas, I'm interested in your services.";
-    const whatsappUrl = `https://wa.me/923001234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/923214052625?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

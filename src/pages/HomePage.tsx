@@ -35,7 +35,7 @@ export const HomePage: React.FC = () => {
             <div className="relative">
               <div className="w-full h-96 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
                 <img
-                  src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg"
+                  src="/qalab-e-abbas.jpeg"
                   alt="Professional educator"
                   className="w-80 h-80 object-cover rounded-xl"
                 />

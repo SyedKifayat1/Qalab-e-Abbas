@@ -38,11 +38,10 @@ export const Header: React.FC = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.href
-                    ? 'text-blue-900 border-b-2 border-blue-900'
-                    : 'text-gray-700 hover:text-blue-900'
-                }`}
+                className={`text-sm font-medium transition-colors duration-200 ${location.pathname === item.href
+                  ? 'text-blue-900 border-b-2 border-blue-900'
+                  : 'text-gray-700 hover:text-blue-900'
+                  }`}
               >
                 {item.name}
               </Link>
@@ -58,19 +57,27 @@ export const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+
+
+
+        {/* Mobile Navigation (Fullscreen) */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
-            <nav className="flex flex-col space-y-3">
+          <div className="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center space-y-6 lg:hidden">
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="absolute top-4 right-4 p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100"
+            >
+              <X className="h-6 w-6" />
+            </button>
+            <nav className="flex flex-col space-y-6 text-center">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    location.pathname === item.href
-                      ? 'text-blue-900 bg-blue-50 rounded-md'
-                      : 'text-gray-700 hover:text-blue-900 hover:bg-gray-50 rounded-md'
-                  }`}
+                  className={`text-lg font-semibold transition-colors duration-200 ${location.pathname === item.href
+                    ? 'text-blue-900'
+                    : 'text-gray-700 hover:text-blue-900'
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -79,6 +86,7 @@ export const Header: React.FC = () => {
             </nav>
           </div>
         )}
+
       </div>
     </header>
   );

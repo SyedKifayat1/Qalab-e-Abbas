@@ -78,7 +78,7 @@ Best regards`;
                 <Mail className="h-6 w-6 text-blue-900 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                  <p className="text-gray-600">qalab@example.com</p>
+                  <p className="text-gray-600">qalab-e-abbas@usa.edu.pk</p>
                 </div>
               </div>
 

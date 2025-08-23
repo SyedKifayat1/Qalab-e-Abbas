@@ -35,7 +35,7 @@ Message: ${formData.message}
 
 Best regards`;
 
-    const whatsappUrl = `https://wa.me/923001234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/923214052625?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -86,7 +86,7 @@ Best regards`;
                 <Phone className="h-6 w-6 text-blue-900 mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                  <p className="text-gray-600">+92 300 123 4567</p>
+                  <p className="text-gray-600">+92 321 4052625</p>
                 </div>
               </div>
 
